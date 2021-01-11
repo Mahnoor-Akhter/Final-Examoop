@@ -9,7 +9,7 @@ namespace Final_Examoop
 	 public class Savings_Account : Account
 	{
 
-		public Savings_Account(string firstname, string lastname, decimal balance, double interestdate) : base(firstname, lastname, balance, intersetdate)
+		public Savings_Account(string firstname, string lastname, decimal balance, double interestdate) : base(firstname, lastname, balance,interestdate)
 		{
 			Balance = balance;
 		}

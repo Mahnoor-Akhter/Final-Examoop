@@ -27,6 +27,14 @@ namespace Final_Examoop
 
 		}
 
+		protected Account(string firstname, string lastname, decimal balance, double interestdate)
+		{
+			FirstName = firstname;
+			LastName = lastname;
+			Balance = balance;
+			interestDate = interestdate;
+		}
+
 		//Output display in list box
 		public override string ToString()
 		{

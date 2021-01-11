@@ -8,7 +8,7 @@ namespace Final_Examoop
 {
 	public class Current_Account : Account
 	{
-		public Current_Account(string firstname , string lastname, decimal balance, double  interestdate) :base(firstname ,lastname ,balance,intersetdate)
+		public Current_Account(string firstname , string lastname, decimal balance, double  interestdate) :base(firstname ,lastname ,balance, interestdate)
 		{
 			Balance = balance;
 		}

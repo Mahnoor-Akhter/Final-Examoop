@@ -22,6 +22,7 @@ namespace Final_Examoop
 	{
 		private readonly Account LbxName__SelectionItem;
 		private object ca;
+		public List<Account> accounts;
 
 		public MainWindow()
 		{
@@ -47,7 +48,19 @@ namespace Final_Examoop
 			Account.Add(ca2);
 			Account.Add(sa1);
 			Account.Add(sa2);
+			UpdatelistBox(accounts);//Call methos to display
 		}
+
+		private void UpdatelistBox(List<Account> accounts)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void UpdatelistBox(Account account)
+		{
+			throw new NotImplementedException();
+		}
+
 		// Update field when an Account is selected
 		private void LbxName__SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
