@@ -20,10 +20,10 @@ namespace Final_Examoop
 			//set date time
 		}
 
-		
+
 		public override string ToString()
 		{
-			return $ "{base.ToString()} - Current_Account ";
+			return base.ToString() + "-Current Account";
 		}
 	}
 }
