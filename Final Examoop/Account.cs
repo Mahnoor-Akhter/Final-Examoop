@@ -14,6 +14,21 @@ namespace Final_Examoop
 
 		public decimal Balance { get; private set; }
 
-		public int interestDate { get; set; }
+		public double interestDate { get; set; }
+
+		public abstract decimal CalulateInterest();
+
+		public Account(string firstname ,string lastname , decimal balance, int interesrdate)
+		{
+			FirstName = firstname;
+			LastName = lastname;
+			Balance = balance;
+			interestDate = interesrdate;
+
+		}
+
+
+
 	}
+
 }
