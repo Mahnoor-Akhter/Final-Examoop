@@ -27,8 +27,16 @@ namespace Final_Examoop
 
 		}
 
+		//Output display in list box
+		public override string ToString()
+		{
+			return string.Format($"{LastName.ToUpper()},{FirstName}");
+		}
 
-
+		internal static void Add(Account ca1)
+		{
+			throw new NotImplementedException();
+		}
 	}
 
 }

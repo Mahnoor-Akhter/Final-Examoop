@@ -20,9 +20,67 @@ namespace Final_Examoop
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private readonly Account LbxName__SelectionItem;
+		private object ca;
+
 		public MainWindow()
 		{
 			InitializeComponent();
+		}
+
+		private void Window_Loaded(object sender , RoutedEventArgs e)
+		{
+			
+			
+			// CurrentAccount (fistname lastname and accountnumber)
+			Account ca1 = new Current_Account("james", "jony", 23234567,34222);
+			Account ca2 = new Current_Account("Jhon", "Smith", 12334567,23456);
+
+			// SavigsAccount (firstname lastname and account number)
+
+		    Account sa1 = new Savings_Account("meurphy", "methew", 23456789,95363);
+		    Account sa2 = new Savings_Account("jimyy", "smith", 2345986,34567);
+
+
+
+			Account.Add(ca1);
+			Account.Add(ca2);
+			Account.Add(sa1);
+			Account.Add(sa2);
+		}
+		// Update field when an Account is selected
+		private void LbxName__SelectionChanged(object sender, SelectionChangedEventArgs e)
+		{
+			Account Selected = LbxName__SelectionItem as Account;
+
+			if (Selected != null)
+			{
+				tblFN.Text = Selected.FirstName;
+				tblLN.Text = Selected.LastName;
+
+				//for current account
+
+				if (Selected is Current_Account)
+				{
+					Current_Account ca = Selected as Current_Account;
+					tblB.Text = ca.ToString();
+
+					tbxTA.Clear();
+
+					cbhCA.IsChecked = true;
+
+				}
+			}
+			// for savings account
+			else if (Selected is Savings_Account)
+			{
+				Savings_Account sa = Selected as Savings_Account;
+
+				tbxTA.Clear();
+
+				cbhSA.IsChecked = true;
+
+			}
 		}
 	}
 }

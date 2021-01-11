@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="LbxName_" HorizontalAlignment="Left" Height="307" Margin="38,57,0,0" VerticalAlignment="Top" Width="296"/>
+        <ListBox x:Name="LbxName_" HorizontalAlignment="Left" Height="307" Margin="38,57,0,0" VerticalAlignment="Top" Width="296" SelectionChanged="LbxName__SelectionChanged"/>
         <CheckBox x:Name="cbhCA" Content="Current Accounts" HorizontalAlignment="Left" Margin="57,36,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="cbhSA" Content="Savings Account" HorizontalAlignment="Left" Margin="222,36,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblname" HorizontalAlignment="Left" Height="23" Margin="369,36,0,0" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top" Width="120"/>
@@ -17,7 +17,7 @@
         <TextBlock x:Name="tblAT" HorizontalAlignment="Left" Height="23" Margin="369,231,0,0" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="tblB" HorizontalAlignment="Left" Height="23" Margin="369,274,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="tblID" HorizontalAlignment="Left" Height="23" Margin="369,315,0,0" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="tblFN" HorizontalAlignment="Left" Margin="531,92,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblFN" HorizontalAlignment="Left" Margin="531,92,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"  />
         <TextBlock x:Name="tblLN" HorizontalAlignment="Left" Margin="531,150,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblB1" HorizontalAlignment="Left" Margin="531,195,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.029,0.542"/>
         <TextBlock x:Name="tblAT1" HorizontalAlignment="Left" Margin="531,232,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.225,0.926"/>
